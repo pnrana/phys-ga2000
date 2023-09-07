@@ -19,15 +19,13 @@ def main():
     print("Normalized" if round(area,2)==1 else "Not Normalized")
 
     plt.plot(x_axis,y_axis,label='plot_Gaussian')
-    plt.title('Normalized Gaussian Distribution (Mean = 0, Std_Dev = 3)')
+    plt.title('Gaussian Distribution (Mean = 0, Std Dev = 3)')
     plt.xlabel('X')
     plt.ylabel('Probability Density')
-    plt.legend()
-    plt.grid(True)
+    plt.grid()
 
-    plt.show()
+    plt.savefig("Gaussian.png")
 
 if __name__ == '__main__':
     main()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
